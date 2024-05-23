@@ -15,7 +15,8 @@ body {
 
 .home-container img {
   margin-top: auto;
-  width: 400px;
+  width: 100%;
+  max-width: 400px;
   image-rendering: crisp-edges;
 }
 
@@ -26,25 +27,29 @@ body {
 
 .about-content {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  text-align: center;
 }
 
 .about-content img {
   margin-top: 10px;
-  width: 300px;
+  width: 100%;
+  max-width: 300px;
   border-radius: 60%;
-  margin-right: 90px;
-  margin-left: 10px;
+  margin-right: 20px;
+  margin-left: 20px;
 }
 
 .bio {
   max-width: 700px;
+  margin-top: 20px;
 }
 
 .bio h3 {
   font-size: 1.5rem;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 
 .bio p {
@@ -58,7 +63,8 @@ body {
   border: 1px solid #ddd;
   border-radius: 10px;
   padding: 6%;
-  width: 200px;
+  width: 100%;
+  max-width: 200px;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -71,7 +77,8 @@ body {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 30%;
+  width: 80%;
+  max-width: 300px;
   text-align: center;
   font-size: 20px;
   font-weight: bold;
@@ -88,21 +95,16 @@ body {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+  width: 100%;
+  max-width: 150px;
 }
 
-.js-container,
-.html-container,
-.python-container {
-  width: 20%;
-}
-
-/* CSS for header */
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #f5f5f5;
+  padding: 10px 20px;
 }
 
 .header .logo {
@@ -110,7 +112,6 @@ body {
   font-family: 'Sriracha', cursive;
   color: #000;
   text-decoration: none;
-  margin-left: 30px;
 }
 
 .nav-items {
@@ -118,16 +119,14 @@ body {
   justify-content: space-around;
   align-items: center;
   background-color: #f5f5f5;
-  margin-right: 20px;
 }
 
 .nav-items a {
   text-decoration: none;
   color: #000;
-  padding: 35px 20px;
+  padding: 15px 20px;
 }
 
-/* CSS for main section */
 .intro {
   display: flex;
   flex-direction: column;
@@ -148,6 +147,7 @@ body {
   font-weight: bold;
   text-transform: uppercase;
   margin: 0;
+  text-align: center;
 }
 
 .intro p {
@@ -155,6 +155,7 @@ body {
   color: #d1d1d1;
   text-transform: uppercase;
   margin: 20px 0;
+  text-align: center;
 }
 
 .intro button {
@@ -171,9 +172,10 @@ body {
 
 .achievements {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  padding: 40px 80px;
+  padding: 40px 20px;
 }
 
 .achievements .work {
@@ -181,7 +183,9 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 0 40px;
+  padding: 20px;
+  max-width: 300px;
+  text-align: center;
 }
 
 .achievements .work i {
@@ -208,17 +212,23 @@ body {
 
 .about-me {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  padding: 40px 80px;
+  padding: 40px 20px;
   border-top: 2px solid #eeeeee;
 }
 
 .about-me img {
-  width: 500px;
-  max-width: 100%;
+  width: 100%;
+  max-width: 500px;
   height: auto;
   border-radius: 10px;
+}
+
+.about-me-text {
+  max-width: 700px;
+  padding: 20px;
 }
 
 .about-me-text h2 {
@@ -226,20 +236,24 @@ body {
   color: #333333;
   text-transform: uppercase;
   margin: 0;
+  text-align: center;
 }
 
 .about-me-text p {
   font-size: 15px;
   color: #585858;
   margin: 10px 0;
+  text-align: center;
 }
-.skill-section
-{margin: 10px;
 
+.skill-section {
+  margin: 10px;
 }
+
 .card-container {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
   margin-top: 30px;
   padding-bottom: 10px;
   font-family: Georgia, 'Times New Roman', Times, serif;
@@ -250,6 +264,7 @@ body {
 .example-card {
   max-width: 200px;
   transition: transform 0.6s ease;
+  margin: 10px;
 }
 
 .example-card:hover {
@@ -259,5 +274,33 @@ body {
 
 .example-card-image {
   background-size: auto;
-  padding-left: 10px 15px;
+  padding: 10px 15px;
+}
+
+@media (max-width: 768px) {
+  .intro {
+    height: auto;
+    padding: 20px;
+  }
+
+  .intro h1 {
+    font-size: 40px;
+  }
+
+  .intro p {
+    font-size: 18px;
+  }
+
+  .intro button {
+    font-size: 18px;
+    padding: 8px 20px;
+  }
+
+  .achievements .work {
+    padding: 10px;
+  }
+
+  .about-me-text {
+    padding: 10px;
+  }
 }
