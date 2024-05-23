@@ -1,0 +1,156 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f2f2f2;
+  color: #f81212;
+}
+
+
+/* Title */
+h3.title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333333;
+  text-align: center;
+  padding-top: 20px;
+}
+
+/* Contact Section */
+.contact_wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+  background-color: #ffffff;
+  margin: 20px auto;
+  max-width: 1200px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.contact_info, .contact_msg {
+  width: 48%;
+}
+
+.contact_info {
+  padding-right: 20px;
+  border-right: 1px solid #ddd;
+}
+
+.icons_wrapp {
+  list-style: none;
+  padding: 0;
+}
+
+.icons_wrapp li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.icon {
+  margin-right: 10px;
+  color: #555;
+}
+
+.icon span {
+  font-size: 24px;
+}
+
+.text {
+  color: #555555;
+}
+
+.contact_msg {
+  padding-left: 20px;
+}
+
+.form_fild {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.input_group {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.input_group.w_50 {
+  width: 48%;
+  margin-right: 4%;
+}
+
+.input_group.w_50:nth-child(2n) {
+  margin-right: 0;
+}
+
+.input_group.w_100 {
+  width: 100%;
+}
+
+.input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #1c1515;
+  border-radius: 4px;
+}
+
+.input_textarea {
+  height: 100px;
+  resize: none;
+}
+
+.placeholder {
+  position: absolute;
+  top: -18px;
+  left: 10px;
+  background: #ffffff;
+  padding: 0 5px;
+  color: #000000;
+  font-size: 14px;
+}
+
+.btn {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #555;
+}
+
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .contact_wrapper {
+      flex-direction: column;
+      padding: 20px;
+  }
+  
+  .contact_info, .contact_msg {
+      width: 100%;
+      padding: 0;
+      margin-bottom: 20px;
+      border-right: none;
+  }
+
+  .input_group.w_50 {
+      width: 100%;
+      margin-right: 0;
+  }
+
+  .navbar {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .navbar a {
+      margin: 10px 0;
+  }
+}
