@@ -4,13 +4,16 @@
   --primary-shadow: rgba(0, 0, 0, 0.1);
   --secondary-shadow: rgba(0, 0, 0, 0.05);
   --bottom-margin: 1rem;
+  --gradient-bg-start: #ffffff; /* Start color of the gradient */
+  --gradient-bg-end: #f0f0f0; /* End color of the gradient */
 }
 
 body {
   font-family: Arial, sans-serif;
-  background-color: var(--bg-color);
+  background: linear-gradient(to bottom, var(--gradient-bg-start), var(--gradient-bg-end)); /* Gradient background */
   margin: 0;
   padding: 0;
+  
 }
 
 .more-about {
@@ -109,6 +112,6 @@ body {
   margin-bottom: 1rem;
 }
 
-.project-container :hover{
+.project-container:hover{
   cursor: pointer;
 }

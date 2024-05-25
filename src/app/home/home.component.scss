@@ -266,7 +266,9 @@ body {
   transition: transform 0.6s ease;
   margin: 10px;
 }
-
+.skills h2 {
+  text-align: center; /* Centering the "My Skills" heading */
+}
 .example-card:hover {
   transform: scale(1.05);
   cursor: pointer;

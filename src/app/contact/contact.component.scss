@@ -6,8 +6,11 @@ body {
   box-sizing: border-box;
   background-color: #f2f2f2;
   color: #f81212;
+  background-image: url('https://images.pexels.com/photos/1261728/pexels-photo-1261728.jpeg'); /* Corrected background-image property */
+  background-size: cover; /* Ensures the image covers the whole background */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
 }
-
 
 /* Title */
 h3.title {
@@ -23,12 +26,21 @@ h3.title {
   display: flex;
   justify-content: space-between;
   padding: 40px;
-  background-color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.8); /* Change the background color */
   margin: 20px auto;
   max-width: 1200px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
+
+.contact_info, .contact_msg {
+  width: 48%;
+  background-color: #ffffff; /* Resetting the background color for inner elements */
+  text-align: center;
+  padding: auto;
+}
+
+
 
 .contact_info, .contact_msg {
   width: 48%;
@@ -125,32 +137,31 @@ h3.title {
   background-color: #555;
 }
 
-
 /* Media Queries */
 @media (max-width: 768px) {
   .contact_wrapper {
-      flex-direction: column;
-      padding: 20px;
+    flex-direction: column;
+    padding: 20px;
   }
   
   .contact_info, .contact_msg {
-      width: 100%;
-      padding: 0;
-      margin-bottom: 20px;
-      border-right: none;
+    width: 100%;
+    padding: 0;
+    margin-bottom: 20px;
+    border-right: none;
   }
 
   .input_group.w_50 {
-      width: 100%;
-      margin-right: 0;
+    width: 100%;
+    margin-right: 0;
   }
 
   .navbar {
-      flex-direction: column;
-      text-align: center;
+    flex-direction: column;
+    text-align: center;
   }
 
   .navbar a {
-      margin: 10px 0;
+    margin: 10px 0;
   }
 }
