@@ -1,18 +1,22 @@
+
 :root {
   --bg-color: #f9f9f9;
   --line-height: 1.6;
   --primary-shadow: rgba(0, 0, 0, 0.1);
   --secondary-shadow: rgba(0, 0, 0, 0.05);
   --bottom-margin: 1rem;
-  --gradient-bg-start: #ffffff; /* Start color of the gradient */
-  --gradient-bg-end: #f0f0f0; /* End color of the gradient */
+  --gradient-bg-start: #ffffff; 
+  --gradient-bg-end: #f0f0f0; 
 }
 
 body {
   font-family: Arial, sans-serif;
-  background: linear-gradient(to bottom, var(--gradient-bg-start), var(--gradient-bg-end)); /* Gradient background */
+  background: linear-gradient(to bottom, var(--gradient-bg-start), var(--gradient-bg-end)); 
   margin: 0;
   padding: 0;
+  background: url('https://images.unsplash.com/photo-1527259214975-556c1a9e6392?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDEyfHxibHVlfGVufDB8fHx8MTY0NjYyNjA1Ng&ixlib=rb-1.2.1&q=80&w=1080') no-repeat center center fixed;
+  background-size: cover;
+  
   
 }
 
@@ -65,7 +69,7 @@ body {
   box-shadow: 0 3px 10px var(--secondary-shadow);
   padding: 20px;
   margin: 10px;
-}
+  }
 
 .projects {
   background-color: var(--bg-color);
@@ -115,3 +119,8 @@ body {
 .project-container:hover{
   cursor: pointer;
 }
+
+
+
+
+

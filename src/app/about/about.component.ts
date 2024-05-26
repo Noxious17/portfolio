@@ -10,5 +10,8 @@ import { FooterComponent } from "../footer/footer.component";
     imports: [NavbarComponent, FooterComponent]
 })
 export class AboutComponent {
+onHome() {
+throw new Error('Method not implemented.');
+}
 
 }

@@ -1,79 +1,91 @@
-@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,300,600,700,900);
-
+/* General footer styles */
 footer {
   background-color: #2980b9;
+  color: #000000;
   bottom: 0;
   left: 0;
   position: absolute;
   right: 0;
   position: fixed;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-div.social-media-links {
-  overflow: hidden;
-  padding-bottom: 4px;
-  text-align: center;
+/* Social media links styles */
+.social-media-links {
+  margin-bottom: 20px;
 }
 
-ul {
-  margin: 0;
+.social-media-links ul {
+  list-style-type: none;
   padding: 0;
-}
-
-li {
-  display: inline;
   margin: 0;
-  padding: 0;
-}
-li img {
-  display: inline-block;
-  width: 50px; /* Adjust the size of the icons */
-  height: 40px; /* Adjust the size of the icons */
+  display: flex;
+  justify-content: center;
 }
 
-a {
-  border-bottom: 0px solid rgba(0,0,0,0.95);
-  border-radius: 4px;
-  box-shadow: inset 0 -3px 0 0 rgba(0,0,0,0), 0 6px 8px rgba(0,0,0,0), 0 24px 24px rgba(0,0,0,0), 0 36px 36px rgba(0,0,0,0), 0 64px 64px rgba(0,0,0,0), 0 64px 128px rgba(0,0,0,0), 0 120px 0 rgba(0,0,0,0), 0 86px 8px 6px rgba(0,0,0,0);
-  display: inline-block;
-  height: 30px;
-  padding: 20px;
-  position: relative;
-  transition: .2s ease-in;
-  width: 30px;
+.social-media-links ul li {
+  margin: 0 10px;
 }
 
-a:hover {
+.social-media-links ul li a {
+  color: #000000;
+  font-size: 24px;
+  transition: transform 0.2s ease-in, color 0.2s ease-in;
+}
+
+.social-media-links ul li a i {
+  color: #000000;
+  transition: color 0.2s ease-in;
+}
+
+/* Hover effects for social media links */
+.social-media-links ul li a:hover,
+.social-media-links ul li a:hover i {
   transform: translateY(-4px);
-  box-shadow: inset 0 -3px 0 0 rgba(0,0,0,0.1), 0 6px 8px rgba(0,0,0,0.05), 0 24px 24px rgba(0,0,0,0.05), 0 36px 36px rgba(0,0,0,0.05), 0 64px 64px rgba(0,0,0,0.15), 0 64px 128px rgba(0,0,0,0.15), 0 86px 8px 6px fadeout( 75), 0 83px 4px 0px fadeout( 5);
-}
-
-a:hover svg.glow {
-  filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feGaussianBlur stdDeviation="10" /></filter></svg>#filter');
-  filter: blur(2px);
-}
-
-svg {
-  left: 20px;
-  position: absolute;
-  top: 20px;
-  height: 30px;
-  width: 30px;
-}
-
-svg.glow path, svg.glow circle {
-  fill: rgba(0,0,0,0);
-}
-
-svg path, svg circle {
-  transition: .2s ease-in;
-}
-.glow {
-  filter: drop-shadow(0 0 5px #1DA1F2);
-  transition: filter 0.3s ease;
+  color: #ffffff;
 }
 
 .social-media-links a:hover .glow {
   filter: drop-shadow(0 0 10px #1DA1F2);
 }
 
+/* Row styles */
+.row ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.row ul li {
+  margin: 0 10px;
+}
+
+.row ul li a {
+  color: #000000;
+  font-size: 20px;
+  text-decoration: none;
+  transition: transform 0.2s ease-in, color 0.2s ease-in;
+}
+
+/* Hover effects for row links */
+.row ul li a:hover {
+  cursor: pointer;
+  transform: translateY(-4px);
+  color: #ffffff;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 700px) {
+  .social-media-links ul li {
+    margin: 0 5px;
+  }
+
+  .row ul li {
+    margin: 0 5px;
+  }
+}

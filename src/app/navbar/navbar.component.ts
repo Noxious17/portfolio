@@ -31,5 +31,6 @@ export class NavbarComponent {
   onAbout() {
     this.router.navigate(['/about']);
   }
+ 
 
 }

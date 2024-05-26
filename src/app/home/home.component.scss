@@ -1,135 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
-
+/* General Styling */
 body {
   margin: 0;
-  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
 }
 
-.home-container {
-  text-align: center;
-  padding: 50px;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-weight: 400;
-  font-style: normal;
+main {
+  padding: 6px;
 }
 
-.home-container img {
-  margin-top: auto;
-  width: 100%;
-  max-width: 400px;
-  image-rendering: crisp-edges;
-}
-
-.text-container {
-  font-size: 30px;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-
-.about-content {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-
-.about-content img {
-  margin-top: 10px;
-  width: 100%;
-  max-width: 300px;
-  border-radius: 60%;
-  margin-right: 20px;
-  margin-left: 20px;
-}
-.about-me h3{
-  align-items: center;
-}
-
-.bio {
-  max-width: 700px;
-  margin-top: 20px;
-}
-
-.bio h3 {
-  font-size: 1.5rem;
-  margin-bottom: 20px;
-}
-
-.bio p {
-  margin-bottom: 20px;
-}
-
-.skills-container img,
-.js-container img,
-.html-container img,
-.python-container img {
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  padding: 6%;
-  width: 100%;
-  max-width: 200px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.skills-container,
-.js-container,
-.html-container,
-.python-container {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 80%;
-  max-width: 300px;
-  text-align: center;
-  font-size: 20px;
-  font-weight: bold;
-}
-
-.skills-container {
-  font-size: 30px;
-}
-
-.skills-container li,
-.js-container li,
-.html-container li,
-.python-container li {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-  max-width: 150px;
-}
-
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #f5f5f5;
-  padding: 10px 20px;
-}
-
-.header .logo {
-  font-size: 25px;
-  font-family: 'Sriracha', cursive;
-  color: #000;
-  text-decoration: none;
-}
-
-.nav-items {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  background-color: #f5f5f5;
-}
-
-.nav-items a {
-  text-decoration: none;
-  color: #000;
-  padding: 15px 20px;
-}
-
+/* Intro Section Styling */
 .intro {
   display: flex;
   flex-direction: column;
@@ -142,170 +22,223 @@ body {
   background-position: center;
   background-repeat: no-repeat;
 }
-
 .intro h1 {
-  font-family: sans-serif;
-  font-size: 60px;
-  color: #fff;
-  font-weight: bold;
-  text-transform: uppercase;
-  margin: 0;
-  text-align: center;
+  font-size: 36px;
+  color: #f7f2f4;
+  margin-bottom: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-shadow: #001316;
 }
 
 .intro p {
-  font-size: 20px;
-  color: #d1d1d1;
-  text-transform: uppercase;
-  margin: 20px 0;
-  text-align: center;
+  font-size: 18px;
+  color: #ffffff;
+  text-shadow: #000304;
+  margin-bottom: 20px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .intro button {
-  background-color: #5edaf0;
-  color: #000;
-  padding: 10px 25px;
+  background-color: #25c3df;
+  color: #000000;
+  padding: 12px 30px;
   border: none;
   border-radius: 5px;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: bold;
   cursor: pointer;
-  box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.4);
+  transition: background-color 0.3s;
 }
 
+.intro button:hover {
+  background-color: #032b32;
+}
+
+/* Achievements Section Styling */
 .achievements {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  align-items: center;
-  padding: 40px 20px;
+  margin-top: 40px;
+  background-color: #bababa;
 }
 
-.achievements .work {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-  max-width: 300px;
+.work {
+  flex: 1;
+  margin: 10px;
   text-align: center;
+  background-color: hsl(0, 0%, 100%);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
-.achievements .work i {
-  width: fit-content;
-  font-size: 50px;
-  color: #333333;
-  border-radius: 50%;
-  border: 2px solid #333333;
-  padding: 12px;
+.work i {
+  font-size: 36px;
+  color: #000000;
+  margin-bottom: 20px;
 }
 
-.achievements .work .work-heading {
-  font-size: 20px;
-  color: #333333;
-  text-transform: uppercase;
-  margin: 10px 0;
+.work-heading {
+  font-size: 24px;
+  color: #000000;
+  margin-bottom: 10px;
 }
 
-.achievements .work .work-text {
-  font-size: 15px;
-  color: #585858;
-  margin: 10px 0;
+.work-text {
+  font-size: 16px;
+  color: #1a1717;
+  line-height: 1.6;
 }
 
+/* About Me Section Styling */
 .about-me {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-  padding: 40px 20px;
-  border-top: 2px solid #eeeeee;
-}
-
-.about-me img {
-  width: 100%;
-  max-width: 500px;
-  height: auto;
-  border-radius: 10px;
+  margin-top: 40px;
 }
 
 .about-me-text {
-  max-width: 700px;
+  flex: 1;
+  max-width: 600px;
   padding: 20px;
+  background-color: #c9e3ea;
 }
 
 .about-me-text h2 {
   font-size: 30px;
-  color: #333333;
-  text-transform: uppercase;
-  margin: 0;
-  text-align: center;
+  color: #000000;
+  margin-bottom: 20px;
+}
+
+.about-me-text h3 {
+  font-size: 24px;
+  color: #000000;
+  margin-bottom: 10px;
 }
 
 .about-me-text p {
-  font-size: 15px;
-  color: #585858;
-  margin: 10px 0;
-  text-align: center;
+  font-size: 16px;
+  color: #000000;
+  line-height: 1.6;
 }
 
-.skill-section {
-  margin: 10px;
+.about-me img {
+  flex: 1;
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+}
+
+/* Skills Section Styling */
+.skills-section {
+  text-align: center;
+  margin-top: 20px;
+
+}
+
+.skills-section p {
+  font-size: 24px;
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.thought {
+  display: flex;
+  justify-content: center;
+  font-family: 'Times New Roman', Times, serif;
+  padding:  60px;
+  margin-bottom: 10px;
+  font-style: italic;
+  font-size: large;
+  font-weight: bold;
+  background-color: #8d8d8d;
+  color: #000000;
 }
 
 .card-container {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: wrap-reverse;
   justify-content: center;
-  margin-top: 30px;
-  padding-bottom: 10px;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-style: normal;
-  font-weight: 300;
+  align-items: center;
+  border-radius: 10px;
+  width: 80%; 
+  height: auto; 
+  margin: 130px; 
+  border-radius: 60px; 
+  box-shadow: 0 4px 8px rgba(153, 133, 133, 0.1); 
+  transition: transform 0.3s ease; 
+
 }
 
 .example-card {
-  max-width: 200px;
-  transition: transform 0.6s ease;
-  margin: 10px;
+  flex: 1;
+  margin: 1px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s;
 }
-.skills h2 {
-  text-align: center; /* Centering the "My Skills" heading */
-}
+
 .example-card:hover {
-  transform: scale(1.05);
-  cursor: pointer;
+  transform: translateY(-5px);
 }
 
-.example-card-image {
-  background-size: auto;
-  padding: 10px 15px;
+.mat-card-header {
+  justify-content: center;
 }
 
-@media (max-width: 768px) {
-  .intro {
-    height: auto;
-    padding: 20px;
+.mat-card-header p {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.mat-card-content {
+  text-align: center;
+}
+
+.mat-card-content p {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.6;
+}
+.image-gallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 50px; 
+}
+
+.image-gallery img {
+  width: 300px; 
+  height: auto; 
+  margin: 10px; 
+  border-radius: 10px; 
+  box-shadow: 0 4px 8px rgba(153, 133, 133, 0.1); 
+  transition: transform 0.3s ease; 
+}
+
+.image-gallery img:hover {
+  transform: scale(1.1); 
+}
+/* Responsive Styling */
+@media screen and (max-width: 768px) {
+  .achievements, .about-me {
+    flex-direction: column;
+    align-items: center;
   }
 
-  .intro h1 {
-    font-size: 40px;
+  .about-me-text, .about-me img {
+    width: 100%;
+    max-width: none;
   }
 
-  .intro p {
-    font-size: 18px;
-  }
-
-  .intro button {
-    font-size: 18px;
-    padding: 8px 20px;
-  }
-
-  .achievements .work {
-    padding: 10px;
-  }
-
-  .about-me-text {
-    padding: 10px;
+  .example-card {
+    flex: 0 0 100%;
   }
 }
