@@ -12,5 +12,6 @@ export const routes: Routes = [
 {path:'contact',component:ContactComponent},
 {path:'footer',component:FooterComponent},
 {path:'navbar',component:NavbarComponent},
-{ path: '', redirectTo: '/home', pathMatch: 'full' }
+{ path: '', redirectTo: '/home', pathMatch: 'full' },
+{ path: '**', redirectTo: '', pathMatch: 'full' } 
 ];

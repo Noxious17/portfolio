@@ -1,18 +1,21 @@
-
-  <header id="navbar">
-    <nav class="navbar-container container">
-      <a href="/" class="home-link">
-        <div class="navbar-logo"><img src="./assets/images/a.png"></div>
-        Portfolio
-      </a>
-    
-      <div id="navbar-menu" aria-labelledby="navbar-toggle">
-        <ul class="navbar-links">
-          <li><a (click)="onHome()">Home</a></li> <br>
-          <li><a (click)="onSkills()">Skills</a></li>
-          <li><a (click)="onAbout()">About</a></li>
-          <li><a (click)="onContact()">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
-  </header>
+<header id="navbar">
+  <nav class="navbar-container container">
+    <a href="/" class="home-link">
+      <div class="navbar-logo"><img src="./assets/images/a.png" alt="Logo"></div>
+      Portfolio
+    </a>
+    <button id="navbar-toggle" aria-label="Toggle navigation" (click)="toggleMenu()">
+      <span class="navbar-toggle-icon"></span>
+      <span class="navbar-toggle-icon"></span>
+      <span class="navbar-toggle-icon"></span>
+    </button>
+    <div id="navbar-menu" class="navbar-menu" [class.active]="isMenuOpen">
+      <ul class="navbar-links">
+        <li><a (click)="onHome()">Home</a></li>
+        <li><a (click)="onSkills()">Skills</a></li>
+        <li><a (click)="onAbout()">About</a></li>
+        <li><a (click)="onContact()">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>

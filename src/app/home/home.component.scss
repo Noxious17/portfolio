@@ -1,4 +1,3 @@
-/* General Styling */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -14,32 +13,36 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-top: 0%;
   align-items: center;
   width: 100%;
   height: 520px;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url("https://images.unsplash.com/photo-1587620962725-abab7fe55159?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1031&q=80");
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url("https://images.unsplash.com/photo-1605379399642-870262d3d051?q=80&w=1812&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 .intro h1 {
   font-size: 36px;
-  color: #f7f2f4;
-  margin-bottom: 20px;
+  color: #f7f2f4c5;
+  margin-bottom: 0px;
+  margin-top: 0%;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-shadow: #001316;
+  text-transform: uppercase;
+  text-decoration: wavy;
 }
 
 .intro p {
   font-size: 18px;
-  color: #ffffff;
+  color: #f7f2f4c5;
   text-shadow: #000304;
   margin-bottom: 20px;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .intro button {
-  background-color: #25c3df;
+  background-color: #25c3dfb0;
   color: #000000;
   padding: 12px 30px;
   border: none;
@@ -54,23 +57,26 @@ main {
   background-color: #032b32;
 }
 
-/* Achievements Section Styling */
+
 .achievements {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  margin-top: 40px;
+  margin-top: 0px;
   background-color: #bababa;
+  background: url('https://images.unsplash.com/photo-1549692520-acc6669e2f0c?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  opacity: 0.8;
 }
 
 .work {
   flex: 1;
   margin: 10px;
   text-align: center;
-  background-color: hsl(0, 0%, 100%);
+  background-color: hsl(0, 18%, 86%);
   padding: 30px;
   border-radius: 10px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  
 }
 
 .work i {
@@ -97,32 +103,39 @@ main {
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  margin-top: 40px;
+  margin-top: 1px;
+  background: url('https://images.unsplash.com/photo-1502899576159-f224dc2349fa?q=80&w=1364&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  
 }
 
 .about-me-text {
   flex: 1;
-  max-width: 600px;
-  padding: 20px;
-  background-color: #c9e3ea;
+  max-width: 600px; 
+  opacity: 0.9;
+  
 }
 
 .about-me-text h2 {
   font-size: 30px;
   color: #000000;
   margin-bottom: 20px;
+  text-decoration: overline;
+  font-weight: bolder;
 }
 
 .about-me-text h3 {
   font-size: 24px;
   color: #000000;
   margin-bottom: 10px;
+  text-decoration: underline;
 }
 
 .about-me-text p {
   font-size: 16px;
   color: #000000;
   line-height: 1.6;
+  background-color: #666666;
+  opacity: 0.8;
 }
 
 .about-me img {
@@ -135,8 +148,7 @@ main {
 /* Skills Section Styling */
 .skills-section {
   text-align: center;
-  margin-top: 20px;
-
+  margin-top: 10px;
 }
 
 .skills-section p {
@@ -144,12 +156,15 @@ main {
   color: #333;
   font-weight: bold;
   margin-bottom: 20px;
+  background-color: #ffffff;
+ 
 }
+
 .thought {
   display: flex;
   justify-content: center;
   font-family: 'Times New Roman', Times, serif;
-  padding:  60px;
+  padding: 60px;
   margin-bottom: 10px;
   font-style: italic;
   font-size: large;
@@ -164,18 +179,15 @@ main {
   justify-content: center;
   align-items: center;
   border-radius: 10px;
-  width: 80%; 
-  height: auto; 
-  margin: 130px; 
-  border-radius: 60px; 
-  box-shadow: 0 4px 8px rgba(153, 133, 133, 0.1); 
-  transition: transform 0.3s ease; 
-
+  height: auto;
+  border-radius: 60px;
+  box-shadow: 0 4px 8px rgba(153, 133, 133, 0.1);
+  transition: transform 0.3s ease;
 }
 
 .example-card {
   flex: 1;
-  margin: 1px;
+  margin: 50px;
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
@@ -206,26 +218,29 @@ main {
   color: #666;
   line-height: 1.6;
 }
+
 .image-gallery {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  margin-top: 50px; 
+  margin-top: 50px;
+
 }
 
 .image-gallery img {
-  width: 300px; 
-  height: auto; 
-  margin: 10px; 
-  border-radius: 10px; 
-  box-shadow: 0 4px 8px rgba(153, 133, 133, 0.1); 
-  transition: transform 0.3s ease; 
+  width: 300px;
+  height: auto;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(153, 133, 133, 0.1);
+  transition: transform 0.3s ease;
 }
 
 .image-gallery img:hover {
-  transform: scale(1.1); 
+  transform: scale(1.1);
 }
+
 /* Responsive Styling */
 @media screen and (max-width: 768px) {
   .achievements, .about-me {
@@ -240,5 +255,112 @@ main {
 
   .example-card {
     flex: 0 0 100%;
+  }
+
+  .intro {
+    height: auto;
+    padding: 18px;
+    text-align: center;
+  }
+
+  .intro h1 {
+    font-size: 28px;
+  }
+
+  .intro p {
+    font-size: 16px;
+  }
+
+  .intro button {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+
+  .work {
+    margin: 20px 10px;
+    padding: 20px;
+  }
+
+  .work-heading {
+    font-size: 20px;
+  }
+
+  .work-text {
+    font-size: 14px;
+  }
+
+  .about-me-text h2 {
+    font-size: 24px;
+  }
+
+  .about-me-text h3 {
+    font-size: 20px;
+  }
+
+  .about-me-text p {
+    font-size: 14px;
+  }
+
+  .skills-section p {
+    font-size: 20px;
+  }
+
+  .thought {
+    padding: 40px;
+    font-size: medium;
+  }
+
+  .image-gallery img {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .intro h1 {
+    font-size: 24px;
+  }
+
+  .intro p {
+    font-size: 14px;
+  }
+
+  .intro button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+
+  .work-heading {
+    font-size: 18px;
+  }
+
+  .work-text {
+    font-size: 12px;
+  }
+
+  .about-me-text h2 {
+    font-size: 20px;
+  }
+
+  .about-me-text h3 {
+    font-size: 18px;
+  }
+
+  .about-me-text p {
+    font-size: 12px;
+  }
+
+  .skills-section p {
+    font-size: 18px;
+  }
+
+  .thought {
+    padding: 20px;
+    font-size: small;
+  }
+
+  .image-gallery img {
+    width: 100%;
+    max-width: 250px;
   }
 }

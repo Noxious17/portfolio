@@ -9,9 +9,13 @@ import { Router } from '@angular/router';
   styleUrl: './navbar.component.scss'
 })
 export class NavbarComponent {
+  isMenuOpen = false;
 
   constructor (public router: Router){
 
+  }
+  toggleMenu() {
+    this.isMenuOpen = !this.isMenuOpen;
   }
   onHome() {
     this.router.navigate(['/home']);
