@@ -9,7 +9,7 @@
   --gradient-bg-end: #f0f0f0; 
 }
 .intro {
-  padding: 10px;
+
   width: 100%; 
   background: url('https://images.unsplash.com/photo-1554561529-d538dc555967?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
   height: 300px;
@@ -79,6 +79,9 @@ body {
   text-align: center;
   padding: 1rem 0;
   background: url('https://images.unsplash.com/photo-1518710098200-0ed3bc1b05e1?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .skill-header {
