@@ -6,10 +6,10 @@ body {
   box-sizing: border-box;
   background-color: #f2f2f2;
   color: #f81212;
-  background-image: url('https://images.pexels.com/photos/1261728/pexels-photo-1261728.jpeg'); /* Corrected background-image property */
-  background-size: cover; /* Ensures the image covers the whole background */
-  background-position: center; /* Centers the image */
-  background-repeat: no-repeat; /* Prevents the image from repeating */
+  background-image: url('https://images.pexels.com/photos/1261728/pexels-photo-1261728.jpeg'); 
+  background-size: cover;
+  background-position: center; 
+  background-repeat: no-repeat; 
 }
 
 /* Title */
@@ -21,7 +21,7 @@ h3.title {
   padding-top: 20px;
 }
 
-/* Contact Section */
+
 .contact_wrapper {
   display: flex;
   justify-content: space-between;
@@ -137,7 +137,6 @@ h3.title {
   background-color: #555;
 }
 
-/* Media Queries */
 @media (max-width: 768px) {
   .contact_wrapper {
     flex-direction: column;
